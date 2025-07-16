@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="IMG/revou.png" alt="Website Logo" class="logo-image">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#headquarters" class="nav-link">Our Profile</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#message" class="nav-link">Message Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="welcome-section">
+            <div class="container">
+                <div class="welcome-content">
+                    <div class="welcome-text">
+                        <h1 id="welcome-message">Hi Femas, Good Evening! Welcome To Website</h1>
+                        <p>Ini adalah website latihan pertama saya. Saya sedang belajar coding dan membuat portfolio untuk tugas mini coding project dari Revou.</p>
+                        <div class="welcome-buttons">
+                            <a href="#message" class="btn btn-primary">Learn More</a>
+                            <a href="#message" class="btn btn-secondary">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="IMG/profile.png" alt="Femas Alfaridzi Profile" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="headquarters" class="headquarters-section">
+            <div class="container">
+                <h2>Our Headquarter</h2>
+                <div class="headquarters-grid">
+                    <div class="headquarters-item">
+                        <img src="IMG/jkt.jpg" alt="Headquarter Jakarta" class="headquarter-image">
+                        <h3>Jakarta</h3>
+                    </div>
+                    <div class="headquarters-item">
+                        <img src="IMG/bali.jpg" alt="Headquarter Bali" class="headquarter-image">
+                        <h3>Bali</h3>
+                    </div>
+                    <div class="headquarters-item">
+                        <img src="IMG/surabaya.jpg" alt="Headquarter Surabaya" class="headquarter-image">
+                        <h3>Surabaya</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2>Projects Portfolio</h2>
+                <p>Berikut adalah beberapa proyek terbaru kami.</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="IMG/iotweb.png" alt="Project 1">
+                        <h3>IoT Smart Parking System</h3>
+                        <p>sistem IoT yang terintegrasi website secara real-time .</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="IMG/perpustakaan.png" alt="Project 2">
+                        <h3>Website Perpustakaan</h3>
+                        <p>Website perpustakaan untuk pengelolaan </p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="IMG/laundry.png" alt="Project 3">
+                        <h3>Website Laundry</h3>
+                        <p>Sistem pemesanan laundry berbasis digital website.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="message" class="message-section">
+            <div class="container">
+                <h2>Message Us</h2>
+                <div class="message-content">
+                    <div class="message-form">
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label for="nama">Nama:</label>
+                                <input type="text" id="nama" name="nama" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tanggal">Tanggal Lahir:</label>
+                                <input type="date" id="tanggal" name="tanggal" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Kelamin:</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+                                    <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan">Pesan:</label>
+                                <textarea id="pesan" name="pesan" placeholder="Pesan" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="message-info">
+                        <div class="info-box">
+                            <p><strong>Current time:</strong> <span id="current-time"></span></p>
+                            <div id="form-output">
+                                <p><strong>Nama:</strong> Femas Alfaridzi</p>
+                                <p><strong>Tanggal Lahir:</strong> 01/11/2005</p>
+                                <p><strong>Jenis Kelamin:</strong> Laki - Laki</p>
+                                <p><strong>Pesan:</strong> Learn Code Camp at Revou</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Created By Femas Alfaridzi</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
